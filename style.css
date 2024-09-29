@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Cocoon Child
+Template:   cocoon-master
+Version:    1.0.8
+*/
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+
+.widget-entry-card-date {
+  display: block;
+}
+
+.calendar-date{
+  width:50%;
+  text-align:center;
+  margin:5px auto;
+
+}
+.calendar-top{
+  font-size:20px;
+}
+
+.cal-date{
+  text-align:center;
+}
+
+.data_data{
+  margin-bottom:10px;
+}
+.image_howto {
+  border:black solid 1px;
+}
+/************************************
+** レスポンシブデザイン用のメディアクエリ
+************************************/
+/*1240px以下*/
+@media screen and (max-width: 1240px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*1030px以下*/
+@media screen and (max-width: 1030px){
+  /*必要ならばここにコードを書く*/
+  .calendar-date{
+    width:100%;
+    text-align:center;
+    margin:5px auto;
+
+  }
+}
+
+/*768px以下*/
+@media screen and (max-width: 768px){
+  /*必要ならばここにコードを書く*/
+}
+
+/*480px以下*/
+@media screen and (max-width: 480px){
+  /*必要ならばここにコードを書く*/

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/********************************************************************
+全体
+Theme Name: Cocoon Child
+Template:   cocoon-master
+********************************************************************/
+div:empty{
+	display: none;
+}
+
+
+/********************************************************************
+施設情報
+********************************************************************/
+.roominfo,
+.roominfo th,
+.roominfo td{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+.roominfo th{
+	background: #f2f2f2;
+}
+
+.roominfo td{
+	text-align: left;
+}
+
+/********************************************************************
+予約フォーム
+********************************************************************/
+
+
+
+
+
+/********************************************************************
+カレンダー
+********************************************************************/
+.cld{
+	/*overflow-x: auto;*/
+	/*overflow-y: hidden;*/
+	width: 100%;
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+.cld table{
+	margin: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+.cld th{
+	min-width: 50px;
+	height: 65px;
+	white-space: nowrap;
+	text-align: center;
+	border: 1px solid black;
+	background: #f2f2f2;
+	position: sticky;
+	top: -1px;
+	z-index: 4;
+}
+.cld th:nth-child(n+3)::before{
+	content: attr(start-time);
+	position: absolute;
+	top: 49px;
+	left: 0px;
+	/*transform: translateX(-50%);*/
+	background-color: white;
+	padding: 0px 1px;
+	border: 1px solid black;
+	font-size: 12px;
+	white-space: nowrap;
+	z-index: 6;
+}
+.cld th:nth-child(1),.cld th:nth-child(2){
+	z-index: 5;
+}
+.cld td{
+	border: 1px solid black;
+	text-align: center;
+	/*white-space: nowrap;*/
+	background: #FFF;
+	padding: 5px;
+}
+th.sticky2,
+td.sticky2{
+	white-space: nowrap;
+	position: sticky;
+	min-width: 75px;
+	left: 0px;
+	z-index: 1;
+}
+.sticky2::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000000;
+	background: #c4c3c2;
+	z-index: -1;
+}
+th.sticky3,
+td.sticky3{
+	white-space: nowrap;
+	position: sticky;
+	left: 78px;
+	z-index: 1;
+}
+.sticky3::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000000;
+	background: #c4c3c2;
+	z-index: -1;
+}
+.link-button{
+	background: none;
+	color: blue;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+/********************************************************************
+管理者画面　タブ機能
+********************************************************************/
+.tab-group {
+	margin-top: 20px;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.tab-button {
+	padding-left: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	cursor: pointer;
+}
+.tab-button .is-active {
+	background: #4bab80;
+	border: 2px solid #4bab80;
+	color: #FFF;
+}
+.tab {
+	width: calc(100% / 5);
+	border: 2px solid #ccebdc;
+	padding: 8px;
+	border-bottom: none;
+}
+.tab-contents {
+	border-top: none;
+	background: #ccebdc;
+}
+.contenta {
+	display: none;
+	padding: 8px;
+	text-align: left;
+}
+.contenta.is-display {
+	display: block;
+	border: 2px solid #4bab80;
+	height: 100%;
+}
