@@ -8,18 +8,16 @@
 | 3 | `rsv-style.css` | **スタイルシート** |
 |  |  |  |
 | **利用者画面** |  |  |
-| 10 | `user-screen.php` | [予約カレンダー](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#10-%E4%BA%88%E7%B4%84%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC--rsv-headerphp) |
 | 10 | `user-screen.php` | [予約カレンダー](#10-%E4%BA%88%E7%B4%84%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC--rsv-headerphp) |
-| 11 | `user_form_input.php` | [予約フォーム](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#11-%E4%BA%88%E7%B4%84%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0--user_form_inputphp) |
-| 12 | `user_form_output.php` | [予約完了表示](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#12-%E4%BA%88%E7%B4%84%E5%AE%8C%E4%BA%86%E8%A1%A8%E7%A4%BA--user_form_outputphp) |
+| 11 | `user_form_input.php` | [予約フォーム](#11-%E4%BA%88%E7%B4%84%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0--user_form_inputphp) |
+| 12 | `user_form_output.php` | [予約完了表示](#12-%E4%BA%88%E7%B4%84%E5%AE%8C%E4%BA%86%E8%A1%A8%E7%A4%BA--user_form_outputphp) |
 |  |  |  |
 | **管理者画面** |  |  |
-| 20 | `admin-screen.php` | [管理者画面トップ](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#20-%E7%AE%A1%E7%90%86%E8%80%85%E7%94%BB%E9%9D%A2%E3%83%88%E3%83%83%E3%83%97--admin-screenphp) |
-| 21 | `admin-rsv-cld.php` | [予約状況確認タブ](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#21-%E4%BA%88%E7%B4%84%E7%8A%B6%E6%B3%81%E7%A2%BA%E8%AA%8D%E3%82%BF%E3%83%96--admin-rsv-cldphp) |
-| 22 | `admin-temp-rsv.php` | [検索タブ](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#22-%E6%A4%9C%E7%B4%A2%E3%82%BF%E3%83%96--admin-temp-rsvphp) |
-| 23 | `admin-new-rsv.php` | [新規予約タブ](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#23-%E6%96%B0%E8%A6%8F%E4%BA%88%E7%B4%84%E3%82%BF%E3%83%96--admin-new-rsvphp) |
-| 24 | `login-input.php` | [ログイン](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#24-%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3--login-inputphp) |
-| 25 | `logout.php` | [ログアウト](https://github.com/sub-t422047/test22/blob/main/Docs/FileList.md#25-%E3%83%AD%E3%82%B0%E3%82%A2%E3%82%A6%E3%83%88--logoutphp) |
+| 20 | `admin-screen.php` | [管理者画面トップ](#20-%E7%AE%A1%E7%90%86%E8%80%85%E7%94%BB%E9%9D%A2%E3%83%88%E3%83%83%E3%83%97--admin-screenphp) |
+| 21 | `admin-rsv-cld.php` | [予約状況確認タブ](#21-%E4%BA%88%E7%B4%84%E7%8A%B6%E6%B3%81%E7%A2%BA%E8%AA%8D%E3%82%BF%E3%83%96--admin-rsv-cldphp) |
+| 22 | `admin-temp-rsv.php` | [検索タブ](#22-%E6%A4%9C%E7%B4%A2%E3%82%BF%E3%83%96--admin-temp-rsvphp) |
+| 23 | `admin-new-rsv.php` | [新規予約タブ](#23-%E6%96%B0%E8%A6%8F%E4%BA%88%E7%B4%84%E3%82%BF%E3%83%96--admin-new-rsvphp) |
+| 24 | `login-input.php` | [ログイン](#24-%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3--login-inputphp) |
 | 25 | `logout.php` | [ログアウト](#25-%E3%83%AD%E3%82%B0%E3%82%A2%E3%82%A6%E3%83%88--logoutphp) |
 |  |  |  |
 |  **――内部処理** |  |  |
@@ -28,7 +26,7 @@
 |  |  |  |
 |  **――フレーム内** |  |  |
 | 40 | `default.php` | デフォルト表示(予約情報表示前) |
-| 41 | `detailed-info.php` | 予約情報表示 |
+| 41 | `detailed-info.php` | 予約詳細情報表示 |
 | 42 | `admin-form-input.php` | 新規予約フォーム |
 
 
@@ -36,58 +34,90 @@
 # 各ファイル概説
 
 #### 10. **予約カレンダー** : `rsv-header.php`
-1. **[関数]** カレンダー用日付設定
-2. **[関数]** データベース初期化
-3. データ取得
-4. 説明文表示
-5. **[関数]** カレンダー表示
-  
+  1. **[関数]** カレンダー用日付設定
+  2. **[関数]** データベース初期化
+  3. データ取得
+  4. 説明文表示
+  5. **[関数]** カレンダー表示
+  <br>
 
 #### 11. **予約フォーム** : `user_form_input.php`
-1. 曜日配列初期化
-2. データベース初期化
-3. データ取得
-4. 連続予約可能数チェック
-5. 予約情報表示
-6. 予約フォーム表示
-7. **[関数]** トップページリンク
-8. **[Js]** 予約時間の動的表示
+  1. 曜日配列初期化
+  2. データベース初期化
+  3. データ取得
+  4. 連続予約可能数チェック
+  5. 予約情報表示
+  6. 予約フォーム表示
+  7. **[関数]** トップページリンク
+  8. **[Js]** 予約時間の動的表示
+  <br>
 
 #### 12. **予約完了表示** : `user_form_output.php`
-1. 日付変数初期化
-2. 曜日配列初期化
-3. **[関数]** 施設名情報及び枠時間情報取得
-4. データベース初期化
-5. データ取得
-6. 予約重複確認
-7. **[関数]** 予約番号発行
-8. 予約実行(データベース反映)
-9. 予約情報表示
-10. **[関数]** トップページリンク
-
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  3. **[関数]** 施設名情報及び枠時間情報取得
+  4. データベース初期化
+  5. データ取得
+  6. 予約重複確認
+  7. **[関数]** 予約番号発行
+  8. 予約実行(データベース反映)
+  9. 予約情報表示
+  10. **[関数]** トップページリンク
+  <br>
+  
 ***
 #### 20. **管理者画面トップ** : `admin-screen.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
-
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+  
 #### 21. **予約状況確認タブ** : `admin-rsv-cld.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
-   
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+  
 #### 22. **検索タブ** : `admin-temp-rsv.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
-   
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
 #### 23. **新規予約タブ** : `admin-new-rsv.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
+  1. 日付変数初期化
+  2. 曜日配列初期化
 
 #### 24. **ログイン** : `login-input.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
 
 #### 25. **ログアウト** : `logout.php`
-    1. 日付変数初期化
-    2. 曜日配列初期化
-   
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
 ***
+#### 30. **ログイン処理** : `login-output.php`
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
+#### 31. **ログアウト処理** : `logout-output.php`
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
+***
+#### 40. **デフォルト表示(予約情報表示前)** : `default.php`
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
+#### 41. **予約詳細情報表示** : `detailed-info.php`
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
+
+#### 42. **新規予約フォーム** : `admin-form-input.php`
+  1. 日付変数初期化
+  2. 曜日配列初期化
+  <br>
