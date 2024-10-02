@@ -229,3 +229,9 @@
     git branch -M main  # ブランチ名を "main" に変更
     git push -u origin main
     ```
+
+
+※
+   ```
+   sudo chmod -R g+w /home/seto/html/wp-content/themes/cocoon-child-master/
+   ```
